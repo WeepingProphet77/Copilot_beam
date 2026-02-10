@@ -63,6 +63,27 @@ npm run build
 
 The built files will be in the `dist` directory.
 
+### Deployment
+
+This application is automatically deployed to GitHub Pages via GitHub Actions. The deployment workflow is triggered on every push to the `main` branch.
+
+**Live Site**: https://weepingprophet77.github.io/Copilot_beam/
+
+#### Setup GitHub Pages (One-time Configuration)
+
+After merging this PR, you need to configure GitHub Pages in your repository settings:
+
+1. Go to your repository on GitHub
+2. Navigate to **Settings** → **Pages**
+3. Under "Build and deployment":
+   - **Source**: Select "GitHub Actions"
+4. The site will automatically deploy when you push to the `main` branch
+
+The workflow will:
+- Install dependencies
+- Build the React application with Vite
+- Deploy the static files to GitHub Pages
+
 ## Usage
 
 1. **Enter Beam Geometry**: 
