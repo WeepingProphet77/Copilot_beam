@@ -3,6 +3,7 @@
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .form-title {
@@ -36,6 +37,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  min-width: 0;
 }
 
 .input-group label {
@@ -67,6 +69,7 @@
   font-size: 16px;
   color: #1e293b;
   outline: none;
+  min-width: 0;
 }
 
 .input-with-unit .unit {
@@ -87,6 +90,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   outline: none;
+  width: 100%;
 }
 
 .input-group select:hover {
@@ -107,6 +111,8 @@
   border-radius: 8px;
   transition: all 0.3s ease;
   outline: none;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .input-group input[type="number"]:focus {
